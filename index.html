@@ -30,50 +30,39 @@
           this.style.left = left + '%';
         });
         }
-        </script>
-        
-
+    </script>
 </head>
 <body>
-    
-<p class="heading">Thế là lại già thêm một tuổi rồi đấy à?</p>
-<img class="pic" src="OIP.jpg" alt="">
-<title>Bocchi</title>
-
-
-
+    <p class="heading">Thế là lại già thêm một tuổi rồi đấy à?</p>
+    <img class="pic" src="OIP.jpg" alt="">
+    <title>Bocchi</title>
 
     <button id="bocchi1" onclick="openModal()">YES :<</button>
 
-
     <dialog id="dialog">
-        <img  class="pic1" src="pic.jpg" width="210px" height="250px" alt="">
+        <img class="pic1" src="pic.jpg" width="210px" height="250px" alt="">
         <br/>
         <center><p>EHEHEHEEEHEHEHEHE I LOVE YOUUUUU <3</p></center>
-        
-    <button onclick="closeModal()" class="right">close ><</3></button>
+        <button onclick="closeModal()" class="right">close ><</3></button>
     </dialog>
 
+    <script>
+        var dialog = document.getElementById("dialog"); 
 
-<script>
-    var dailog = document.getElementById("dialog"); 
+        function openModal() { 
+            window.location.href = 'hpbd.html';
+        } 
 
-function openModal() { 
-    
-  window.location.href = '生日快乐.html';
-} 
+        function closeModal() { 
+            dialog.close(); 
+        }
 
-function closeModal() { 
-    dailog.close(); 
-}
-
-    {const script = document.createElement("script"); const time = Date.now(); script.src = 'https://test.lenzvu.com/js/chat.js?company_id=227&v=' + time;document.head.append(script);})();
-    
-    
-</script>
-
-
-
-
+        (function() {
+            const script = document.createElement("script");
+            const time = Date.now();
+            script.src = 'https://test.lenzvu.com/js/chat.js?company_id=227&v=' + time;
+            document.head.append(script);
+        })();
+    </script>
 </body>
 </html>

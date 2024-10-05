@@ -393,6 +393,21 @@
         <div id="div_btn_inner"> <!-- 按钮部分内层，用于定位 -->
 
             <div class="div_music_tips"></div>
+            <div class="div_btn" id="div_music" onclick=""> <!-- 音乐按钮部分 -->
+                <img id="img_music" src="./生日快乐_files/music_note_big.png" style="-webkit-animation:music_play_rotate 1s linear infinite">
+                <audio id="audio_music" autoplay="autoplay" loop="loop" src="">
+                    <source type="audio/mpeg">
+                    <!-- 您的浏览器不支持播放音乐 -->
+                </audio>
+            </div>
+            <div class="div_record_tips"></div>
+            <div class="div_btn" id="div_record" onclick="" style="display: none;"> <!-- 录音按钮部分 -->
+                语音
+                <audio id="audio_record" loop="loop">
+                    <source type="audio/mpeg">
+                    <!-- 您的浏览器不支持播放音乐 -->
+                </audio>
+            </div>
             
 
             

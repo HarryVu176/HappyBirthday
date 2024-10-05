@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0024)http://888.1dly.cn/178/# -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="stylesheet.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,7 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     
-    <title>生日快乐</title>
+    <title>For Quan</title>
         <script>
         window.onload = function(){
             pushHistory();
@@ -41,7 +40,6 @@
         }
     </script>
         <script>
-        //判断客户端设备，选择写入meta
         function init_viewport(){
             if(navigator.userAgent.indexOf('Android') != -1){
                 var version = parseFloat(RegExp.$1);
@@ -76,20 +74,19 @@
             text-decoration: none;
         }
 
-        #div_container { /*最外层div，用于居中兼容PC和移动*/
+        #div_container { 
             width: 500px;
             margin: 0px auto;
             position: relative;
-            /*background-color: #FAFAFA;*/
             font-size: 1em;
         }
 
 
-        .div_pure_words { /*文字部分的最外层，用于定位*/
+        .div_pure_words { 
             position: relative;
             display: none;
         }
-        .div_pure_words_bg { /*背景设置在这里*/
+        .div_pure_words_bg { 
             background-repeat: repeat;
             background-size: 100%;
             background-attachment: fixed;
@@ -99,27 +96,27 @@
         .div_pure_words_height {
             visibility: hidden;
             padding: 30px;
-            text-align: justify;  /*为了使文字两端对齐 */
-            white-space: pre-wrap; /*保留换行效果*/
+            text-align: justify;  
+            white-space: pre-wrap; 
             font-size: 1.1em;
             color: white;
         }
         .div_pw_typed {
             position: absolute;
             left: 0;
-            right: 0;  /*4个方向定位使div充满整个画画*/
+            right: 0;  
             top: 0;
-            bottom: 0;  /*4个方向定位使div充满整个画画*/
+            bottom: 0;  
             width: 500px;
-            background:rgba(255,255,255,0.8); /*半透明效果*/
+            background:rgba(255,255,255,0.8); 
             padding: 30px;
-            text-align: justify;  /*为了使文字两端对齐 */
+            text-align: justify;  
             padding-top:30px!important;
             padding-right: 100px;
         }
         #span_pw_typed {
-            width:100%; /*为了使文字两端对齐 */
-            white-space:pre-wrap; /*保留换行效果*/
+            width:100%; 
+            white-space:pre-wrap; 
             font-size: 1.1em;
             font-weight: normal;
             font-family: "Montserrat", sans-serif;
@@ -140,8 +137,6 @@
         }
         
     </style>
-
-    <!-- 按钮部分的样式 -->
     
     <link type="text/css" rel="stylesheet" href="./生日快乐_files/theme_public_btn.css">
     
@@ -151,7 +146,6 @@
 
 
 
-    <!-- 按需加载，选择此片头时方才加载 -->
     <link type="text/css" rel="stylesheet" href="./生日快乐_files/start_birthdaycake.css">
 
 
@@ -163,19 +157,16 @@
 
 <body style="" data-new-gr-c-s-check-loaded="14.1057.0" data-gr-ext-installed="">
 
-<div id="div_container"> <!-- 最外层div，用于居中兼容PC和移动 -->
-    <div id="div_start_bg"></div> <!-- 用于遮挡主题，作为片头的背景 -->
-
-
-
-    <!-- 按需加载，选择此片头时方才加载 -->
+<div id="div_container"> 
+    <div id="div_start_bg"></div> 
 
 
 
 
 
 
-    <!-- 按需加载，选择此片头时方才加载 -->
+
+
     <div id="div_dbcake" style="display: block; height: 996px; background-image: url(&quot;https://txmov2.a.yximgs.com/ufile/atlas/NTIyODY3OTI3MDg1MDM5ODU5Nl8xNjg1MDc3MTAzOTcx_1.jpg&quot;);"><!-- 用于设置背景 -->
         <div id="div_dbcake_inner" style="height: 1196px; background: rgba(130, 130, 130, 0.8);"><!-- 用于存放文字div -->
             <div id="div_dbacke_access">
@@ -472,14 +463,6 @@
     console.log(record_json);
     var signPackage={"appid":"wx47f716bdd7699533","timestamp":1578227319,"nonceStr":"8LPWxGxKiX51ZiiT","url":"http:\/\/www.makusi.cn\/Home\/Play\/play_show\/ws\/YGdml21m","signature":"77c51cd322dc4c46953ed6c717b520fecd9517a8","rawString":"jsapi_ticket=sM4AOVdWfPE4DxkXGEs8VHINcjHJVwMsFjJyfreRy7BkPikCF23E_PJXM0R1f3A60Yj9luL42XotYVYjMd4eZg&noncestr=8LPWxGxKiX51ZiiT&timestamp=1578227319&url=http:\/\/www.makusi.cn\/Home\/Play\/play_show\/ws\/YGdml21m"};
 
-    // var main_title='嗨嗨嗨';
-    // // console.log(main_title);
-    // if(main_title=='' || main_title=='null'){  //允许标题为空
-    // 	document.title='慢慢喜欢你';
-    // }
-    // console.log("");
-
-
     var pure_words_content=theme_content['pure_words_content'];
     var str_cursorChar;
     var typed_bool;
@@ -487,25 +470,22 @@
     var interval_pw_height;
     var height_div_pw=$(".div_pure_words_height").height();
     function init_pure_words(){
-        //允许内容为空时直接展示，不设置为随机内容，用于空主题
-        if(typeof(pure_words_content)=='undefined'){ //处理全新作品
+        if(typeof(pure_words_content)=='undefined'){
             var array_str_temp=[];
-            random_text_array(array_str_temp,12); //获取随机的模板文字
-            // array_str_temp.push('你现在看到的只是案例，文字是可以自定义哒，6000字以下');
+            random_text_array(array_str_temp,12); 
             pure_words_content=array_str_temp.join('\r\r');
         }
-        $(".div_pure_words_height").html(pure_words_content+'22222');  //初始化复制内容，撑开文档高度
+        $(".div_pure_words_height").html(pure_words_content+'22222');  
 
-        // 初始化设置div的bg图片 初始化设置div的bg图片
         if(typeof(theme_content['bg_style_pure_words'])!='undefined' && theme_content['bg_style_pure_words']=='bg_opacity'){
             if(typeof(theme_content['bg_img'])!='undefined' && theme_content['bg_img']!=''){
                 $(".div_pure_words_bg").css({"background-image": "url("+theme_content['bg_img']+")"});
             }
         }
 
-        //以下是打字效果的js
+
         if(typeof(theme_content['cursor_char'])!='undefined' && theme_content['cursor_char']!=''){
-            switch(theme_content['cursor_char']){ //设置打字光标的样式
+            switch(theme_content['cursor_char']){ 
                 case 'cursor_heart':
                     str_cursorChar='❤';
                     break;
@@ -524,11 +504,11 @@
                 default:
                     str_cursorChar='|';
             }
-        }else{ //处理全新作品，默认显示打字效果
+        }else{ 
             str_cursorChar='❤';
         }
 
-        //判断用户有没有选择打字效果
+
         if(typeof(theme_content['typed_bool'])!='undefined' && theme_content['typed_bool']!=''){
             typed_bool= theme_content['typed_bool']=='typed_y' ? true : false;
         }else{
@@ -549,7 +529,7 @@
                 //$(".div_pure_words_height").height(least_height_div_pw+100);
                 $(".div_pure_words_height").height(least_height_div_pw);
                 if($(".div_pure_words_height").height()<window_height){
-                    $(".div_pure_words_height").height(window_height); //不能小于窗口的高度
+                    $(".div_pure_words_height").height(window_height); 
                     console.log('let us be high as window');
                 }
             }
@@ -560,10 +540,10 @@
     function display_pure_words(){
         if(typed_bool){
             var typed_pure_words = new Typed('#span_pw_typed', {
-                strings: [pure_words_content], //输入内容, 支持html标签
+                strings: [pure_words_content], 
                 typeSpeed: 120, //打字速度
-                cursorChar: str_cursorChar,//替换光标的样式
-                contentType: 'html', //值为html时，将打印的文本标签直接解析html标签
+                cursorChar: str_cursorChar,
+                contentType: 'html', 
                 onComplete: function(abc){
                     // console.log(abc);
                     console.log('finished typing words');
@@ -571,14 +551,13 @@
                 },
             });
         }else{
-            //如果不需要打字效果就直接显示
             $("#span_pw_typed").html(pure_words_content).fadeIn();
         }
         init_attachment();
     }
 
 
-    function random_text_array(temp_array,length){  //获取随机的模板文字
+    function random_text_array(temp_array,length){  
         console.log('random_text_array');
         var random_array=[];
         while(random_array.length<length){
@@ -590,7 +569,7 @@
         }
         // console.log(random_array);
         for(var i=0; i<length; i++){
-            temp_array.push(array_as_words_love[random_array[i]]); //获取随机的模板文字
+            temp_array.push(array_as_words_love[random_array[i]]); 
         }
     }
 
@@ -604,7 +583,7 @@
 
 
 
-<!-- 按需加载，选择此片头时方才加载 -->
+
 
 
 <script>
@@ -641,17 +620,16 @@
             "\u8bf7\u70b9 Yes\ud83e\udd7a",
             "\u8bf7\u70b9Yes"
         ],
-        "dbcake_question":"Tap here tap hereee",	//问题
-        "dbcake_answer":"Tap here tap hereee",		//答案
-        "dbcake_title":"Happy Birthday!",		//祝福语标题
-        "dbcake_wishes":"Everyone wishes you happy birthday, then i wish you to stay by my side as long as we can, and feel the world is loving you"	//祝福语内容
+        "dbcake_question":"Tap here tap hereee",	
+        "dbcake_answer":"Tap here tap hereee",		
+        "dbcake_title":"Happy Birthday!",		
+        "dbcake_wishes":"Everyone wishes you happy birthday, then i wish you to stay by my side as long as we can, and feel the world is loving you"	
     }; //可能为null
     console.log(start_content);
 
     var start_id;
     $(function(){
-        //此事件为触发互动创意
-        start_id='birthdaycake'; //可能为null
+        start_id='birthdaycake';
         init_start(start_id);
     });
 
@@ -705,7 +683,6 @@
 
 
 
-<!-- 按需加载，选择此片头时方才加载 -->
 <script src="./生日快乐_files/start_birthdaycake.js.download"></script>
 
 
@@ -716,11 +693,11 @@
 
 
 <script>
-    var attachment='null'; //可能为null
-    var attached_content={"bool_save":false}; //可能为null
+    var attachment='null'; 
+    var attached_content={"bool_save":false}; 
     console.log(attached_content);
 
-    function init_attachment(){  //开始attachment
+    function init_attachment(){  
         console.log('init_attachment ->'+attachment);
         switch(attachment){
             case 'timer':
@@ -736,7 +713,7 @@
 
 
 <script src="./生日快乐_files/jweixin-1.2.0.js.download"></script>
-<script src="./生日快乐_files/theme_common.js.download"></script> <!-- 音乐控制和微信设置等公共部分js外部引入 -->
+<script src="./生日快乐_files/theme_common.js.download"></script> 
 
 
 
